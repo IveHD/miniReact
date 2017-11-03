@@ -1,7 +1,7 @@
 'use strict';
 
 import CompositeComponent from './CompositeComponent';
-import ReactCompositeComponent from './ReactCompositeComponent';
+import ReactCompositeComponent from './componentClass/ReactCompositeComponent';
 function isInternalComponentType(type) {
 	return typeof type === 'function' 
 		&& typeof type.prototype !== 'undefined' 

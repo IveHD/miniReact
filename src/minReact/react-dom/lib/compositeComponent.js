@@ -1,14 +1,14 @@
 'use strict';
 
-import TextComponentClass from './componentClass/textComponentClass';
-import DOMComponentClass from './componentClass/DOMComponentClass';
+import ReactDOMTextComponent from './componentClass/ReactDOMTextComponent';
+import ReactDOMComponent from './componentClass/ReactDOMComponent';
 
 const CompositeComponent = {
 	createInstanceForText: (element) => {
-		return new TextComponentClass(element);
+		return new ReactDOMTextComponent(element);
 	},
 	createInstanceForDOM: (element) => {
-		return new DOMComponentClass(element);
+		return new ReactDOMComponent(element);
 	},
 };
 
