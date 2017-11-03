@@ -3,11 +3,11 @@ import $ from 'jquery';
 import instantiateReactComponent from '../instantiateReactComponent'
 
 let globalIdCounter = 0;
-let DOMComponentClass = function(element) {
+let ReactDOMComponent = function(element) {
 	this._currentElement = element;
 	this._tag = this._currentElement.type;
 }
-Object.assign(DOMComponentClass.prototype, {
+Object.assign(ReactDOMComponent.prototype, {
 	mountComponent: function(hostParent, container, context) {
 		this._rootNodeID = globalIdCounter++;
 
@@ -46,4 +46,4 @@ Object.assign(DOMComponentClass.prototype, {
 		return tagOpen + '>' + content + tagClose;
 	}
 })
-export default DOMComponentClass;
+export default ReactDOMComponent;

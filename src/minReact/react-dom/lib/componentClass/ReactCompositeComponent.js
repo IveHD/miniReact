@@ -1,4 +1,4 @@
-import ReactNodeTypes from './ReactNodeTypes';
+import ReactNodeTypes from '../ReactNodeTypes';
 
 let nextMountID = 1;
 const ReactCompositeComponent = {
