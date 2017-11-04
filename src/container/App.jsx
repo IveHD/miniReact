@@ -1,14 +1,15 @@
 import React from '@react';
 import Hello from './Hello';
 export default class App extends React.Component {
-	getInitialState() {
-		return {};
+	componentWillMount() {
+		console.log('App.componentWillMount...')
 	}
 	componentDidMount() {
-		console.log('asdasd')
+		console.log('App.componentDidMount...')
 	}
 
 	render(){
+		console.log('App.render...')
 		return <div><Hello/><span>world</span></div>;
 	}
 }

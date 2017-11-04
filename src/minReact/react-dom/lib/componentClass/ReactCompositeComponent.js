@@ -34,6 +34,9 @@ const ReactCompositeComponent = {
 		this._pendingForceUpdate = false;
 
 		let markup = this.performInitialMount(renderedElement, hostParent, hostContainerInfo, context);
+		if(inst.componentDidMount){
+			inst.componentDidMount();
+		}
 		return markup;
 	},
 	_constructComponent: function(doConstruct, publicProps, publicContext){
