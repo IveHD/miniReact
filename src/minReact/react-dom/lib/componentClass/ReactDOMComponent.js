@@ -30,7 +30,7 @@ Object.assign(ReactDOMComponent.prototype, {
 				$(document).delegate('[data-reactid="'+this._rootNodeID+'"]', eventType, this._rootNodeID, nextProps[propName]);
 			}else if(propName != 'children') {
 				tagOpen += ' ' + propName + '=' + nextProps[propName];
-			}else {
+			}else{
 				if(nextProps[propName] instanceof Array){
 					nextProps[propName].forEach(e => {
 						let childInstance = instantiateReactComponent(e);	

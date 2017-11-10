@@ -4,7 +4,6 @@ let ReactDOMTextComponent = function(text) {
 }
 Object.assign(ReactDOMTextComponent.prototype, {
 	mountComponent: function() {
-		console.log('this', this);
 		return this._currentElement;
 	}
 })
